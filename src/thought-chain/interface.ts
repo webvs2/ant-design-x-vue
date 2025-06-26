@@ -1,6 +1,6 @@
-import type { CSSProperties, HTMLAttributes, VNode } from "vue";
-import type { Collapsible } from "./hooks/useCollapsible";
-import type { ConfigProviderProps, TooltipProps } from "ant-design-vue";
+import type { ConfigProviderProps, TooltipProps } from 'ant-design-vue';
+import type { CSSProperties, HTMLAttributes, VNode } from 'vue';
+import type { Collapsible } from './hooks/useCollapsible';
 
 export enum THOUGHT_CHAIN_ITEM_STATUS {
   /**
@@ -85,7 +85,8 @@ export interface ThoughtChainItem {
 
 export type SemanticType = 'item' | 'itemHeader' | 'itemContent' | 'itemFooter';
 
-export interface ThoughtChainProps extends Omit<HTMLAttributes, 'title'> {
+export interface ThoughtChainProps
+  extends /* @vue-ignore */ Omit<HTMLAttributes, 'title'> {
   /**
    * @desc 思维节点集合
    * @descEN chain items
@@ -139,7 +140,8 @@ export interface ThoughtChainNodeContextProps {
   classNames?: ThoughtChainProps['classNames'];
 }
 
-export interface ThoughtChainNodeProps extends Omit<HTMLAttributes, 'onClick'> {
+export interface ThoughtChainNodeProps
+  extends /* @vue-ignore */ Omit<HTMLAttributes, 'onClick'> {
   info?: ThoughtChainItem;
   nextStatus?: ThoughtChainItem['status'];
   onClick?: (key: string) => void;

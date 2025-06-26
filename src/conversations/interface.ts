@@ -1,9 +1,12 @@
+import type { MenuProps } from 'ant-design-vue';
+import type {
+  ConfigProviderProps,
+  DirectionType,
+} from 'ant-design-vue/es/config-provider';
 import type { CSSProperties, HTMLAttributes, VNode } from 'vue';
 import type { AnyObject } from '../_util/type';
-import GroupTitle from './GroupTitle.vue';
-import type { ConfigProviderProps, DirectionType } from 'ant-design-vue/es/config-provider';
-import type { MenuProps } from 'ant-design-vue';
 import type { AvoidValidation } from '../type-utility';
+import GroupTitle from './GroupTitle.vue';
 
 type GroupType = string;
 
@@ -53,7 +56,7 @@ export interface Conversation extends AnyObject {
  * @desc 会话列表组件参数
  * @descEN Props for the conversation list component
  */
-export interface ConversationsProps extends HTMLAttributes {
+export interface ConversationsProps {
   /**
    * @desc 会话列表数据源
    * @descEN Data source for the conversation list
@@ -82,7 +85,9 @@ export interface ConversationsProps extends HTMLAttributes {
    * @desc 会话操作菜单
    * @descEN Operation menu for conversations
    */
-  menu?: ConversationsItemProps['menu'] | ((value: Conversation) => ConversationsItemProps['menu']);
+  menu?:
+    | ConversationsItemProps['menu']
+    | ((value: Conversation) => ConversationsItemProps['menu']);
 
   /**
    * @desc 是否支持分组, 开启后默认按 {@link Conversation.group} 字段分组
@@ -115,7 +120,8 @@ export interface ConversationsProps extends HTMLAttributes {
   rootClassName?: string;
 }
 
-export interface ConversationsItemProps extends Omit<HTMLAttributes, 'onClick'> {
+export interface ConversationsItemProps
+  extends /* @vue-ignore */ Omit<HTMLAttributes, 'onClick'> {
   info: Conversation;
   prefixCls?: string;
   direction?: DirectionType;
@@ -123,7 +129,7 @@ export interface ConversationsItemProps extends Omit<HTMLAttributes, 'onClick'> 
     trigger?:
       | VNode
       | ((conversation: Conversation, info: { originNode: VNode }) => VNode);
-      getPopupContainer?: (triggerNode: HTMLElement) => HTMLElement;
+    getPopupContainer?: (triggerNode: HTMLElement) => HTMLElement;
   };
   active?: boolean;
   onClick?: (info: Conversation) => void;
