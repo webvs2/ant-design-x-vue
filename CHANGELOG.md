@@ -1,6 +1,135 @@
 # Changelog
 
 
+## v1.3.2
+
+[compare changes](https://undefined/undefined/compare/v1.3.1...v1.3.2)
+
+### 🩹 Fixes
+
+- **use-x-agent:** Fix return type (#416)
+- **suggestion:** Fix open prop reactive (#425)
+
+### 📖 Documentation
+
+- Update demo about x-agent (#418)
+- Update independent tsx demo (#419)
+
+### ❤️ Contributors
+
+- Wzc520pyfm ([@wzc520pyfm](http://github.com/wzc520pyfm))
+
+## v1.3.1
+
+[compare changes](https://undefined/undefined/compare/v1.3.0...v1.3.1)
+
+### 🩹 Fixes
+
+- **bubble:** Remove memo to fix bubble update (#415)
+
+### 📖 Documentation
+
+- **style:** 修改演示demo 宽度 #411 (#413, #411)
+- **attachments:** Add high-quality preview example for image file (#370)
+- **sender:** Add custom input demo (#384)
+
+### ❤️ Contributors
+
+- Wzc520pyfm ([@wzc520pyfm](http://github.com/wzc520pyfm))
+- Clddup ([@clddup](http://github.com/clddup))
+
+## v1.3.0
+
+[compare changes](https://undefined/undefined/compare/v1.2.9...v1.3.0)
+
+### 🚀 Enhancements
+
+- Update useXChat & XRequest & fix useXAgent's RequestFn onSuccess type (#394)
+- **attachments:** Add custom icon options for FileCard (#381)
+- **attachments:** Support multiple files upload (#410)
+- **bubble:** Header and footer support get key and fix type define (#405)
+- **use-x-agent:** Support dynamic option configuration (#395)
+- **x-request:** Support dynamic option configuration (#396)
+
+### 🔥 Performance
+
+- **bubble:** Memoize bubble items to optimize list rendering (#392)
+
+### 🩹 Fixes
+
+- **prompts:** Fix scroll style (#399)
+- **welcome:** Fix warning of runtime prop checked (#404)
+- **bubble:** Disable typing for initial data (#391)
+
+### 📖 Documentation
+
+- **sender:** Update components prop description (#402)
+- **bubble:** Fix list demo scroll style (#400)
+
+### 📦 Build
+
+- **project:** Improve tree sharking (#386)
+
+### 🏡 Chore
+
+- Fix changelog (af5c881)
+
+### ❤️ Contributors
+
+- Wzc520pyfm ([@wzc520pyfm](http://github.com/wzc520pyfm))
+- PeikyLiu ([@PeikyLiu](http://github.com/PeikyLiu))
+- Kieran Wang ([@kieranwv](http://github.com/kieranwv))
+- Wujunyi0907 ([@wujunyi0907](http://github.com/wujunyi0907))
+
+## v1.2.9
+
+[compare changes](https://undefined/undefined/compare/v1.2.8...v1.2.9)
+
+### 🚀 Enhancements
+
+- **bubble:** Support slots for bubble list (#373)
+
+### 🩹 Fixes
+
+- **bubble:** Fix attrs reactive of bubble list (#393)
+- **bubble:** Improve bubble list scrollbar style (#389)
+- **suggestion:** Cascader dropdown popup height not auto (#398)
+
+### 📦 Build
+
+- **project:** Support build esm min file for dist (#371)
+
+### ❤️ Contributors
+
+- Wzc520pyfm ([@wzc520pyfm](http://github.com/wzc520pyfm))
+- 雨溪 ([@yuxi-ovo](http://github.com/yuxi-ovo))
+
+## v1.2.8
+
+[compare changes](https://undefined/undefined/compare/v1.2.7...v1.2.8)
+
+### 🚀 Enhancements
+
+- **welcome:** Support vnode getter (#343)
+- **sender:** Add speech custom icon support (#374)
+- Support conf compatible style (#383)
+
+### 🩹 Fixes
+
+- **suggestion:** Fix the dropdown width not adapting when block (#358)
+
+### 📖 Documentation
+
+- **dev:** Add cdn online demo (#369)
+- Fix slot warning of setup demo (#372)
+- **xstream:** Fix documentation typos (#377)
+
+### ❤️ Contributors
+
+- Wzc520pyfm ([@wzc520pyfm](http://github.com/wzc520pyfm))
+- Kieran Wang ([@kieranwv](http://github.com/kieranwv))
+- XiangYu Liu ([@PeikyLiu](http://github.com/PeikyLiu))
+
 ## v1.2.7
 
 [compare changes](https://undefined/undefined/compare/v1.2.6...v1.2.7)

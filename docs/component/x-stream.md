@@ -13,7 +13,7 @@
 常见的 `ReadableStream` 实例，如 `await fetch(...).body` 使用示例:
 
 ```js
-import { XStream } from '@ant-design/x';
+import { XStream } from 'ant-design-x-vue';
 
 async function request() {
   const response = await fetch();
@@ -57,3 +57,6 @@ x-stream/custom-protocol
 | --- | --- | --- | --- | --- |
 | readableStream | ReadableStream 实例 | ReadableStream<'Uint8Array'> | - | - |
 | transformStream | 自定义的 transformStream 用于转换流的处理 | TransformStream<string, T> | sseTransformStream | - |
+## 贡献者
+
+<doc-contributors component-name="x-stream" :max-count="50" :show-view-all="true" />
