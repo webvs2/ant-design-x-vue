@@ -1,4 +1,4 @@
-import type { CSSProperties, HTMLAttributes, VNode } from "vue";
+import type { CSSProperties, HTMLAttributes, VNode } from 'vue';
 
 export interface BasePromptItem {
   /**
@@ -36,10 +36,16 @@ export interface PromptProps extends BasePromptItem {
   children?: BasePromptItem[];
 }
 
-export type SemanticType = 'list' | 'item' | 'itemContent' | 'title' | 'subList' | 'subItem';
+export type SemanticType =
+  | 'list'
+  | 'item'
+  | 'itemContent'
+  | 'title'
+  | 'subList'
+  | 'subItem';
 
 export interface PromptsProps
-  extends Omit<HTMLAttributes, 'onClick' | 'title'> {
+  extends /* @vue-ignore */ Omit<HTMLAttributes, 'onClick' | 'title'> {
   /**
    * @desc 包含多个提示项的列表。
    * @descEN List containing multiple prompt items.
